@@ -1,0 +1,80 @@
+@font-face { font-family: main-font; src: url('VT323-Regular.ttf'); }
+
+:root {
+    --page-w: 100px;
+
+    --border-w: 2px;
+    --border-pad: 2px;
+
+    --fg-col: rgb(255, 94, 33, 255);
+    --bg-col: #220000;
+    --border-col: var(--fg-col);
+
+}
+
+div {
+    /* outline: solid var(--bg-col) var(--border-pad); */
+    border: solid var(--border-col) var(--border-w);
+    margin: 2px;
+    color: var(--fg-col);
+    
+    /* .noborder {
+    } */
+}
+
+body {
+    @media screen and (min-width: 1000px) {
+        width: 1000px;
+    }
+
+    margin: 2px auto;
+    background-color: var(--bg-col);
+    font-family: main-font, Liberation Mono;
+    font-size: 23px;
+    .header {
+      padding: 10px; /* some padding */
+      text-align: center; /* center the text */
+      /* background: #1abc9c; 
+      color: white; /* white text color */
+    }
+
+    /* Increase the font size of the <h1> element */
+    .header h1 {
+        font-size: 40px;
+    }
+
+    .navbar {
+        overflow: hidden; /* Hide overflow */
+        /* background-color: #333;  */
+        /* padding: 5px; */
+    }
+    
+    .navbar a {
+        float: left;
+        display: block;
+        font-weight: bold;
+        color: var(--fg-col);
+        text-align: center;
+        padding: 4px 20px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .navbar a.right {
+        float: right;
+    }
+
+    .navbar a:hover {
+        color: var(--bg-col);
+        background-color: var(--fg-col);
+        /* border-bottom: var(--border-w) solid red; */
+        /* margin-bottom: calc(-3*var(--border-w)); */
+    }
+    
+    .hsplit {
+        display: flex;
+        flex-wrap: wrap;
+        border: none #000 0px;
+        margin: 0px;
+    }
+}

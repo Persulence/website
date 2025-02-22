@@ -1,0 +1,94 @@
+@font-face { font-family: main-font; src: url('VT323-Regular.ttf'); }
+
+:root {
+    --page-w: 100px;
+
+    --border-w: 2px;
+    --border-pad: 2px;
+
+    --bright-col: rgb(255, 94, 33, 255);
+    --fg-col: #000000;
+    --bg-col: #cc00aa;
+    --bg-large-col: rgb(116, 99, 99);
+    --border-col: #c79393;
+    --border-dark-col: rgb(59, 47, 47);
+
+}
+
+div {
+    outline: solid #000000 1px;
+    border-left: solid var(--border-col) var(--border-w);
+    border-top: solid var(--border-col) var(--border-w);
+    border-right: solid var(--border-dark-col) var(--border-w);
+    border-bottom: solid var(--border-dark-col) var(--border-w);
+    margin: 10px;
+    padding: 6px;
+    color: var(--fg-col);
+    background-color: var(--bg-large-col);
+    
+    /* .noborder {
+    } */
+}
+
+body {
+    @media screen and (min-width: 1000px) {
+        width: 1000px;
+    }
+
+    margin: 2px auto;
+    background-color: var(--bg-col);
+    background-image: url("assets/main_background.png");
+    background-size: cover;
+    background-repeat: repeat-y;
+    font-family: main-font, Liberation Mono;
+    font-size: 23px;
+    .header {
+      padding: 10px; /* some padding */
+      text-align: center; /* center the text */
+      /* background: #1abc9c; 
+      color: white; /* white text color */
+    }
+
+    /* Increase the font size of the <h1> element */
+    .header h1 {
+        font-size: 40px;
+    }
+
+    .navbar {
+        overflow: hidden; /* Hide overflow */
+        /* background-color: #333;  */
+        /* padding: 5px; */
+    }
+    
+    .navbar a {
+        float: left;
+        display: block;
+        font-weight: bold;
+        color: var(--fg-col);
+        text-align: center;
+        padding: 4px 20px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .navbar a.right {
+        float: right;
+    }
+
+    .navbar a:hover {
+        color: var(--bg-large-col);
+        background-color: var(--fg-col);
+        /* border-bottom: var(--border-w) solid red; */
+        /* margin-bottom: calc(-3*var(--border-w)); */
+    }
+    
+    .hsplit {
+        display: flex;
+        flex-wrap: wrap;
+        border: none #000 0px;
+        outline: none;
+        margin: 0px;
+        padding: 0;
+        background-color: transparent;
+    }
+}
