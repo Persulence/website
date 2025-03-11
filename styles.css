@@ -1,5 +1,9 @@
 @font-face { font-family: main-font; src: url('VT323-Regular.ttf'); }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --page-w: 100px;
 
@@ -13,6 +17,10 @@
     --border-col: #c79393;
     --border-dark-col: rgb(59, 47, 47);
 
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin: 0.25em 0 .2em;
 }
 
 div {
@@ -30,13 +38,33 @@ div {
     } */
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+  }
+  
+  li a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+
+/* audio {
+    border-left: solid var(--border-col) var(--border-w);
+    border-top: solid var(--border-col) var(--border-w);
+    border-right: solid var(--border-dark-col) var(--border-w);
+    border-bottom: solid var(--border-dark-col) var(--border-w);
+} */
+
 body {
     @media screen and (min-width: 1000px) {
         width: 1000px;
     }
 
     margin: 2px auto;
-    background-color: var(--bg-col);
+    background-color: #000000;
     background-image: url("assets/main_background.png");
     background-size: cover;
     background-repeat: repeat-y;
@@ -82,6 +110,34 @@ body {
         /* margin-bottom: calc(-3*var(--border-w)); */
     }
     
+    /* Vertical Navbar */
+
+    .ver-navbar {
+        top: 50%;
+        transform: translateY(-50%);
+        position: fixed;
+        list-style-type: none;
+        overflow: hidden;
+    }
+
+    .ver-navbar a {
+        float: left;
+        display: block;
+        font-weight: bold;
+        color: var(--fg-col);
+        text-align: center;
+        padding: 4px 20px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .ver-navbar a:hover {
+        color: var(--bg-large-col);
+        background-color: var(--fg-col);
+        /* border-bottom: var(--border-w) solid red; */
+        /* margin-bottom: calc(-3*var(--border-w)); */
+    }
+    
     .hsplit {
         display: flex;
         flex-wrap: wrap;
@@ -90,5 +146,14 @@ body {
         margin: 0px;
         padding: 0;
         background-color: transparent;
+    }
+    
+    .audio-container {
+        /* outline: none; */
+        /* border-right: solid var(--border-col) var(--border-w);
+        border-bottom: solid var(--border-col) var(--border-w);
+        border-left: solid var(--border-dark-col) var(--border-w);
+        border-top: solid var(--border-dark-col) var(--border-w); */
+        padding: 0%;
     }
 }
