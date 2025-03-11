@@ -156,4 +156,8 @@ body {
         border-top: solid var(--border-dark-col) var(--border-w); */
         padding: 0%;
     }
+    
+    .audio-container a {
+        color: var(--fg-col)
+    }
 }
