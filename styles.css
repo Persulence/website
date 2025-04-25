@@ -160,4 +160,15 @@ body {
     .audio-container a {
         color: var(--fg-col)
     }
+    
+    .contact {
+    }
+    
+    .contact table {
+        width: 100%;
+    }
+    
+    .contact a {
+        color: var(--fg-col)
+    }
 }
