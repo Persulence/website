@@ -13,8 +13,8 @@ html {
     --bright-col: rgb(255, 94, 33, 255);
     --fg-col: #000000;
     --bg-col: #cc00aa;
-    --bg-large-col: rgb(116, 99, 99);
-    --border-col: #c79393;
+    --bg-large-col: rgb(186, 189, 185);
+    --border-col: #f0d4cd;
     --border-dark-col: rgb(59, 47, 47);
 
 }
@@ -77,12 +77,6 @@ body {
       color: white; /* white text color */
     }
     
-    .layout {
-        display: flex;
-        padding: none;
-        border: none;
-    }
-
     /* Increase the font size of the <h1> element */
     .header h1 {
         font-size: 40px;
@@ -126,6 +120,7 @@ body {
     }
 
     .sticky-sidebar {
+        display: flex;
         width: 20%;
         height: 25vh; 
         overflow: none;
@@ -135,12 +130,11 @@ body {
     }
 
     .sticky-sidebar a {
-        float: left;
         display: block;
         font-weight: bold;
         color: var(--fg-col);
-        text-align: center;
-        padding: 4px 20px;
+        text-align: left;
+        padding: 4px 10px;
         text-decoration: none;
         font-size: 20px;
     }
