@@ -51,6 +51,15 @@ ul {
     text-decoration: none;
   }
 
+a {
+    color: var(--fg-col);
+}
+  
+a:hover {
+    color: var(--bg-large-col);
+    background-color: var(--fg-col);
+}
+
 /* audio {
     border-left: solid var(--border-col) var(--border-w);
     border-top: solid var(--border-col) var(--border-w);
@@ -171,9 +180,5 @@ body {
     
     .contact table {
         width: 100%;
-    }
-    
-    .contact a {
-        color: var(--fg-col)
     }
 }
